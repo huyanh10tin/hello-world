@@ -1,4 +1,11 @@
 <h1>Angular</h1>
 <app-courses></app-courses>
-<app-star [isChecked]="post.isFavorite"></app-star>
+<app-star [isChecked]="post.isFavorite" (change)="onFavoriteChanged($event)"></app-star>
 <app-input></app-input>
+<app-panel>
+  <div class="heading">Heading</div>
+  <div class="body">
+    <h2>Body</h2>
+    <p>Some content here...</p>
+  </div>
+</app-panel>

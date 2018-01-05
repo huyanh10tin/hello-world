@@ -1,12 +1,14 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-star',
   templateUrl: './star.component.html',
-  styleUrls: ['./star.component.css']
+  styleUrls: ['./star.component.css'],
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class StarComponent implements OnInit {
   @Input() isChecked: boolean;
+  @Output('change') change = new EventEmitter();
 
   constructor() {
   }
@@ -15,7 +17,7 @@ export class StarComponent implements OnInit {
   }
 
   changeStatus() {
-    console.log('Clicked');
     this.isChecked = !this.isChecked;
+    this.change.emit({newValue: this.isChecked});
   }
 }

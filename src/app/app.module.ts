@@ -11,12 +11,14 @@ import {SummaryPipe} from './summary.pipe';
 import {FormatHuyAnh} from './formathuyanh.pipe';
 import {StarComponent} from './star/star.component';
 import { InputComponent } from './input/input.component';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent, CourseComponent, CoursesComponent, SummaryPipe, StarComponent, InputComponent, FormatHuyAnh
+    AppComponent, CourseComponent, CoursesComponent, SummaryPipe, StarComponent, InputComponent, FormatHuyAnh, PanelComponent, LikeComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,9 @@
 import {Component} from '@angular/core';
 
+interface FavoriteChangeEventArgs {
+  newValue: boolean;
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,4 +15,8 @@ export class AppComponent {
     isFavorite: true
   };
   title = 'Agular app';
+
+  onFavoriteChanged(eventArgs: FavoriteChangeEventArgs) {
+    console.log('Favorite changed', eventArgs);
+  }
 }
