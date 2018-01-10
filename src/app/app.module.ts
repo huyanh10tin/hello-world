@@ -13,12 +13,13 @@ import {StarComponent} from './star/star.component';
 import { InputComponent } from './input/input.component';
 import { PanelComponent } from './panel/panel.component';
 import { LikeComponent } from './like/like.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent, CourseComponent, CoursesComponent, SummaryPipe, StarComponent, InputComponent, FormatHuyAnh, PanelComponent, LikeComponent,
+    AppComponent, CourseComponent, CoursesComponent, SummaryPipe, StarComponent, InputComponent, FormatHuyAnh, PanelComponent, LikeComponent, ContactFormComponent,
   ],
   imports: [
     BrowserModule,
